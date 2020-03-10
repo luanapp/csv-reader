@@ -20,8 +20,8 @@ public class App {
                 .append(aula)
                 .append(", Conteúdo: ")
                 .append(conteudo)
-                .append(", data")
-                .append(dia.toString());
+                .append(", data: ")
+                .append(dia.format(DateTimeFormatter.ofPattern("dd MMM yyyy")));
             System.out.println(builder.toString());
         }
     }
